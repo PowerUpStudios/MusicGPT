@@ -1,7 +1,10 @@
+console.log("initializing")
 PGPTConversation.onMessage((msg) => {
+	console.log("Message received")
   if (msg.isGPT) {
     msg.contentChanged(null, () => {
       const ms = msg.getElementsByTagName("mgpt")
+      console.log(ms)
       for (let m = 0; m < ms.length; m++) {
         ms[m].outerHTML = `<div id="t"></div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.2.2/abcjs-basic-min.min.js" integrity="sha512-REXLcx385NL3ZWosam5LzLJoA0AkfeVdW94IQURSM/Gl6EyrS0hS3LtqR094d00lsicEVAprWA5SUTD5oljapg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
