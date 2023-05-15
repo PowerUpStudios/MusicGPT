@@ -1,7 +1,7 @@
-function MusicGptLoadMusic(el) {
+function MusicGptLoadMusic(el, music) {
 var myContext = new AudioContext();
 var synth = new ABCJS.synth.CreateSynth();
-var visualObj = ABCJS.renderAbc(el, "${ms[m].innerHTML}");
+var visualObj = ABCJS.renderAbc(el, music);
 synth.init({
   audioContext: myContext,
   visualObj: visualObj[0],
