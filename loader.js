@@ -1,4 +1,4 @@
-function MusicGptLoadMusic(el, music) {
+function MusicGPTLoadMusic(el, music) {
 var myContext = new AudioContext();
 var synth = new ABCJS.synth.CreateSynth();
 var visualObj = ABCJS.renderAbc(el, music);
