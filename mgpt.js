@@ -10,5 +10,6 @@ PGPTConversation.onMessage((msg) => {
 	ms[m].innerHTML = '<div id="t"></div>'
         MusicGPTLoadMusic(ms[m].getElementById("t"), mus)
       }
+    })
   }
 }, window.parent.document)
