@@ -7,9 +7,9 @@ PGPTConversation.onMessage((msg) => {
       console.log(ms)
       for (let m = 0; m < ms.length; m++) {
 	let mus = ms[m].innerHTML
-	ms[m].innerHTML = '<div id="t"></div>'
+	ms[m].innerHTML = '<div class="t"></div>'
 	      console.log(ms[m])
-        MusicGPTLoadMusic(ms[m].getElementById("t"), mus)
+        MusicGPTLoadMusic(ms[m].getElementsByClassName("t")[0], mus)
       }
     })
   }
