@@ -8,6 +8,7 @@ PGPTConversation.onMessage((msg) => {
       for (let m = 0; m < ms.length; m++) {
 	let mus = ms[m].innerHTML
 	ms[m].innerHTML = '<div id="t"></div>'
+	      console.log(ms[m])
         MusicGPTLoadMusic(ms[m].getElementById("t"), mus)
       }
     })
